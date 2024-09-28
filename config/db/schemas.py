@@ -31,3 +31,11 @@ class AnswerResponse(BaseModel):
 
     class Config:
         orm_mode = True
+
+
+class RemoveQuestion(BaseModel):
+    id :int
+
+
+class RemoveAnswer(BaseModel):
+    id : int

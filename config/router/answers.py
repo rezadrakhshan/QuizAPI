@@ -23,3 +23,16 @@ def create_answer(answer: schemas.AnswerCreate, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(db_answer)
     return db_answer
+
+
+@router.delete("/remove_answer/")
+def remove_answer(answer: schemas.RemoveAnswer, db: Session = Depends(get_db)):
+    try:
+        db_answer = (
+            db.query(models.Answer).filter(models.Answer.id == answer.id).first()
+        )
+        db.delete(db_answer)
+        db.commit()
+        return {"message": "Answer was delete"}
+    except Exception as e:
+        raise HTTPException(status_code=404, detail="Item not found")
