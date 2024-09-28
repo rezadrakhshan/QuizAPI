@@ -57,7 +57,7 @@
             <td>Remove question</td></td>
         </tr>
         <tr>
-            <td>DELETE</td>
+            <td>POST</td>
             <td>/answers/</td>
             <td>Create a new answers</td>
         </tr>
