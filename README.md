@@ -6,7 +6,7 @@
 <p>Welcome to the QuizAPI project! This API allows you to create, manage, and retrieve quizzes and questions programmatically.</p>
 
 <h2>API<h2>
-<pre>https://rezaderakhshan-quiz-api.hf.space/</pre>
+<pre>https://rezaderakhshan-quizapp.liara.run/</pre>
 
 <h2>Features</h2>
 <ul>
